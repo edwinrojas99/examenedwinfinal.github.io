@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="CSS/esti.css">
+	<script type="text/javascript">
+		function validar()
+		{
+			var usuario = document.getElementById("usuario").value;
+			var Contraseña = document.getElementById("clave").value;	
+
+			if(usuario == "admin" && Contraseña == "1234")
+			{
+				
+				window.location="conver.html";
+			}
+			else
+			{
+				alert("Verifique sus credenciales");
+
+				
+			}
+		}
+	</script>
+
+</head>
+<body>
+	<center>
+		 <div id="login">
+			<h2 align="center">INICIAR SESION PARA REALIZAR COVERCIONES DE MONEDA</h2>
+				<label>Usuario: </label>
+				<input class="controls" type="text" name="usuario" id="usuario" required placeholder="Usuario">
+			
+				<label>Contraseña: </label>
+				<input class="controls" type="password" name="clave" id="clave"  placeholder="Contraseña" required>
+			
+				<input class="botons" type="submit" name="btnVerifivaca" id="btnVerifica" onclick="validar()" value="Iniciar" > 
+			 </div>
+	</center>
+		
+</body>
+</html>
